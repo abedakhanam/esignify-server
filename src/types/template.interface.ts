@@ -1,5 +1,5 @@
 import { Document } from 'mongoose'
-import { IField } from './field.interface'
+import { Field } from './field.interface'
 import { IRecipientRole } from './recipientRole.interface'
 import { IWorkflow } from './workflow.interface'
 
@@ -10,7 +10,7 @@ export interface ITemplate extends Document {
   createdBy: string // User ID of the creator
   createdAt: Date // Automatically set by Mongoose, if you enable timestamps
   updatedAt: Date // Automatically set by Mongoose, if you enable timestamps
-  defaultFields: IField[] // Array of fields
+  defaultFields: Field[] // Array of fields
   recipientRoles: IRecipientRole[] // Array of recipient roles
   documentTemplateUrl: string // URL or path to the uploaded document
   workflow?: IWorkflow // Optional workflow information
