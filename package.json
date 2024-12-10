@@ -1,14 +1,14 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc && node dist/server.js",
     "dev": "nodemon",
     "lint": "eslint .",
     "format": "prettier --write .",
-        "build": "tsc"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
